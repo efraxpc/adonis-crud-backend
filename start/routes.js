@@ -24,10 +24,10 @@ Route.group(()=>{
   Route.post('usuarios/', 'UserController.store')
   Route.post('usuarios/login', 'UserController.login')
 
-  Route.get('clientes/', 'ClienteController.all').middleware('auth')
-  Route.post('clientes/', 'ClienteController.store').middleware('auth')
-  Route.delete('clientes/', 'ClienteController.destroy').middleware('auth')
-  Route.put('clientes/', 'ClienteController.update').middleware('auth')
+  Route.get('clientes/', 'ClienteController.all').middleware('guest')
+  Route.post('clientes/', 'ClienteController.store').middleware('guest')
+  Route.delete('clientes/:Id', 'ClienteController.destroy').middleware('guest')
+  Route.put('clientes/:Id', 'ClienteController.update').middleware('guest')
 
 }).prefix('api/v1/')
 

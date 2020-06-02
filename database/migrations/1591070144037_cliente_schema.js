@@ -7,8 +7,10 @@ class ClienteSchema extends Schema {
   up () {
     this.create('clientes', (table) => {
       table.increments()
-      table.string('nome').notNullable()
-      table.string('email').notNullable()
+      table.string('Name').notNullable()
+      table.string('Id')
+      table.string('Ocupation').notNullable()
+      table.string('Description').notNullable()
       table.timestamps()
     })
   }

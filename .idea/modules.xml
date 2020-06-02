@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../React-CRUD-using-Material-Ui/.idea/React-CRUD-using-Material-Ui.iml" filepath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/.idea/React-CRUD-using-Material-Ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rest-api-adonis.iml" filepath="$PROJECT_DIR$/.idea/rest-api-adonis.iml" />
     </modules>
   </component>

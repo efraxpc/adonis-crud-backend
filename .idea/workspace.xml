@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834894ff-bf14-4d3c-8295-ef21833ede59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/.idea/React-CRUD-using-Material-Ui.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/src/components/CreateData.js" beforeDir="false" afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/src/components/CreateData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/src/components/Crud.js" beforeDir="false" afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/src/components/Crud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../React-CRUD-using-Material-Ui/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rest-api-adonis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rest-api-adonis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/Http/ClienteController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Http/ClienteController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/1591070144037_cliente_schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/1591070144037_cliente_schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/kernel.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/kernel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/routes.js" afterDir="false" />
@@ -16,8 +25,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="rest-api-adonis" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../React-CRUD-using-Material-Ui" />
   </component>
   <component name="ProjectId" id="1ckBMXeSw3HAiIwI0OrecrfTqJG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,11 +53,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591062663725</updated>
-      <workItem from="1591062666162" duration="7077000" />
+      <workItem from="1591062666162" duration="15341000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2546" y="187" width="667" height="729" key="find.popup" timestamp="1591081218528">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2546" y="187" width="667" height="729" key="find.popup/0.23.1920.978/1920.23.1920.1057@1920.23.1920.1057" timestamp="1591081218528" />
   </component>
 </project>

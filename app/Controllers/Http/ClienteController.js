@@ -4,7 +4,7 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
-
+const Database = use('Database')
 const Cliente = use("App/Models/Cliente");
 
 /**
@@ -22,7 +22,6 @@ class ClienteController {
    */
   async all({ request, response, view }) {
     const clientes = await Cliente.all();
-
     return clientes;
   }
 
@@ -36,9 +35,10 @@ class ClienteController {
    * @param {Response} ctx.response
    */
   async store({ request, response }) {
-    const data = request.only(["nome", "email"]);
-    const cliente = await Cliente.create(data);
-
+    const data = JSON.parse(request.raw())
+    let cliente = await Cliente.create(data);
+    cliente.Id = cliente.id
+    await cliente.save()
     return cliente;
   }
 
@@ -51,12 +51,12 @@ class ClienteController {
    * @param {Response} ctx.response
    */
   async update({ params, request, response }) {
-    const id = request.all().id
-    const cliente = await Cliente.findOrFail(id);
-    const data = request.only(["nome", "email"]);
-
-    cliente.merge(data);
-    await cliente.save();
+    const id = params.Id
+    const data = JSON.parse(request.raw())
+    await Database
+      .table('clientes')
+      .where('id', id)
+      .update({ Name: data['Name'], Ocupation: data['Ocupation'], Description: data['Description'] })
 
     return cliente
   }
@@ -70,8 +70,7 @@ class ClienteController {
    * @param {Response} ctx.response
    */
   async destroy({ params, request, response }) {
-    const id = request.all().id
-    const cliente = await Cliente.findOrFail(id);
+    const cliente = await Cliente.findOrFail(params.Id);
     await cliente.delete();
   }
 }
