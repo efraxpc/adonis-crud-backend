@@ -19,3 +19,17 @@ const Route = use('Route')
 Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
+
+Route.group(()=>{
+  Route.post('usuarios/', 'UserController.store')
+  Route.post('usuarios/login', 'UserController.login')
+
+  Route.get('clientes/', 'ClienteController.all').middleware('auth')
+  Route.post('clientes/', 'ClienteController.store').middleware('auth')
+  Route.delete('clientes/', 'ClienteController.destroy').middleware('auth')
+  Route.put('clientes/', 'ClienteController.update').middleware('auth')
+
+}).prefix('api/v1/')
+
+
+
